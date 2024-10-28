@@ -22,9 +22,13 @@ Evaluation: The model is evaluated on multiple tasks, computing accuracy, precis
 
 ### Code Overview
 Imports: Libraries like PyTorch, torchvision, and easyfsl are used for model implementation and evaluation.
+
 Data Preparation: The dataset is transformed, downloaded, and loaded using DataLoader with TaskSampler.
+
 Model Definition: A custom Prototypical Networks class is defined, utilizing a pretrained ResNet-18 for feature extraction.
+
 Training Loop: The model is trained over a specified number of episodes, updating the weights based on the computed loss.
+
 Evaluation: The model is tested on the test set, and performance metrics are reported.
 
 
