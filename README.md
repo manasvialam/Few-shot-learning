@@ -22,14 +22,10 @@ Evaluation: The model is evaluated on multiple tasks, computing accuracy, precis
 
 ### Code Overview
 Imports: Libraries like PyTorch, torchvision, and easyfsl are used for model implementation and evaluation.
-
 Data Preparation: The dataset is transformed, downloaded, and loaded using DataLoader with TaskSampler.
-
 Model Definition: A custom Prototypical Networks class is defined, utilizing a pretrained ResNet-18 for feature extraction.
-
 Training Loop: The model is trained over a specified number of episodes, updating the weights based on the computed loss.
-
 Evaluation: The model is tested on the test set, and performance metrics are reported.
 
-Results
-After training, the model achieves significant accuracy in classifying images from the CIFAR-100 dataset. The evaluation metrics are printed for insight into the model's performance.
+
+This repository includes two files featuring the same code but differing in the number of training episodes: one with 500 episodes and the other with 40,000 episodes. The substantial increase in training episodes has led to a marked improvement in the model's performance and accuracy, highlighting the significance of extensive training in achieving better results in few-shot learning tasks.
